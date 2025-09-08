@@ -3,15 +3,8 @@ import {
   ChartColumnDecreasing,
   Command,
   Factory,
-  GalleryVerticalEnd,
   House,
-  NotebookText,
-  Package,
-  Scissors,
-  Settings2,
-  Shirt,
-  ShoppingCart,
-  Zap,
+  Settings2
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
@@ -39,7 +32,7 @@ export function AppSidebar({ ...props }) {
     },
     teams: [
       {
-        name: "BMS Ekkam",
+        name: "BMS",
         logo: Factory,
       },
       {

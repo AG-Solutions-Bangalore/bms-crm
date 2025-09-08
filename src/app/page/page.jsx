@@ -26,7 +26,7 @@ export default function Page({ children }) {
       <SidebarInset>
         <header className="flex flex-row  justify-between  h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
           <div className="flex items-center gap-2 px-4 ">
-            <SidebarTrigger className="-ml-1 hover:bg-[#5f3ab8]" />
+            <SidebarTrigger className="-ml-1 hover:bg-[#2563eb]" />
             <Separator orientation="vertical" className="mr-2 h-4" />
             <Breadcrumb>
               <BreadcrumbList>
@@ -35,7 +35,7 @@ export default function Page({ children }) {
                     <BreadcrumbLink
                       href="#"
                       onClick={handleBackClick}
-                      className="flex items-center gap-2 text-muted-foreground hover:text-[#5f3ab8]"
+                      className="flex items-center gap-2 text-muted-foreground hover:text-[#2563eb]"
                     >
                       <ArrowLeft className="h-4 w-4" />
                       <span>Back</span>
