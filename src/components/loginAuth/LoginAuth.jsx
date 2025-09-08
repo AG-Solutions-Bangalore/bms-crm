@@ -164,7 +164,7 @@ export default function LoginAuth() {
                           onChange={(event) => setEmail(event.target.value)}
                           required
                           autoComplete="username"
-                          maxLength={30}
+                          maxLength={10}
                         />
                       </motion.div>
                     </div>
@@ -212,7 +212,7 @@ export default function LoginAuth() {
                       <span className="relative z-10">
                         {isLoading ? loadingMessage : "Sign In"}
                       </span>
-                      <span className="absolute left-0 top-0 h-full w-0 bg-[#785db8] transition-all duration-700 ease-in-out group-hover:w-full z-0"></span>
+                      <span className="absolute left-0 top-0 h-full w-0 bg-[#537cc7] transition-all duration-700 ease-in-out group-hover:w-full z-0"></span>
                     </Button>
                   </form>
                   <div className="flex justify-end mt-4">

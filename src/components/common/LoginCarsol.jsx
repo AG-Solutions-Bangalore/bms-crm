@@ -7,16 +7,16 @@ import { Typewriter } from "react-simple-typewriter";
 
 const images = [
   {
-    src: "",
-    text: "Exploring Plastic Raw Materials Manufacturers",
+    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1300&q=80",
+    text: "Comfortable and affordable rooms for your stay",
   },
   {
-    src: "",
-    text: "Reliable solutions for a sustainable future",
+    src: "https://img.freepik.com/free-photo/young-friends-hostel_52683-121730.jpg?ga=GA1.1.70886028.1749460191&semt=ais_hybrid&w=740&q=80",
+    text: "Safe and homely environment with modern amenities",
   },
   {
-    src: "",
-    text: "Delivering performance through precision",
+    src: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1300&q=80",
+    text: "Your perfect PG experience, just like home",
   },
 ];
 
@@ -36,10 +36,10 @@ export default function LoginCarousel() {
   }, []);
 
   return (
-    <div className="hidden md:flex md:w-1/2 bg-gradient-to-tr from-[#ccefd9] to-[#c3e2f7] items-center justify-center relative overflow-hidden p-4">
+    <div className="hidden md:flex md:w-1/2 bg-gradient-to-tr from-blue-100 to-blue-50 items-center justify-center relative overflow-hidden p-4">
       <div className="absolute inset-0 z-0">
         <motion.div
-          className="absolute w-64 h-64 bg-green-200 rounded-full opacity-30 blur-[100px] top-8 left-12"
+          className="absolute w-64 h-64 bg-blue-200 rounded-full opacity-30 blur-[100px] top-8 left-12"
           animate={{ scale: [1, 1.1, 1] }}
           transition={{ repeat: Infinity, duration: 6 }}
         />
@@ -49,7 +49,7 @@ export default function LoginCarousel() {
           transition={{ repeat: Infinity, duration: 7 }}
         />
         <motion.div
-          className="absolute w-40 h-40 bg-green-100 rounded-full opacity-20 blur-[70px] bottom-6 left-28"
+          className="absolute w-40 h-40 bg-blue-100 rounded-full opacity-20 blur-[70px] bottom-6 left-28"
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ repeat: Infinity, duration: 8 }}
         />
@@ -81,8 +81,8 @@ export default function LoginCarousel() {
         transition={{ duration: 0.8 }}
         className="z-10 text-center max-w-md"
       >
-        <h1 className="text-4xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5f3ab8] via-[#0d947a] to-[#5f3ab8]">
-        BMS Ekkam{" "}
+        <h1 className="text-4xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#2563eb] to-[#1e3a8a] ">
+          BMS{" "}
         </h1>
 
         {showText && (

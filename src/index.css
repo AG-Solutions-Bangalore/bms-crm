@@ -23,7 +23,7 @@
     --muted: 220 15% 95%;
     --muted-foreground: 220 8% 40%;
 
-    --accent: 200 65% 38%; /* teal accent */
+    --accent: 220 65% 46%; /* teal accent */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 55%; /* red */
@@ -48,6 +48,7 @@
 
   .dark {
     /* Dark mode */
+    --background: 220 25% 12%;
     --background: 220 25% 12%;
     --foreground: 0 0% 95%;
 

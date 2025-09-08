@@ -113,10 +113,8 @@ export const WithoutLoaderComponent = ({ name }) => {
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 1.8, ease: "linear" }}
         >
-          {/* Purple Loader Border */}
           <div className="absolute inset-0 rounded-full border-t-4 border-[#2563eb] animate-spin" />
 
-          {/* Purple Glow */}
           <div className="absolute inset-4 bg-gradient-to-tr from-[#2563eb] via-[#3b82f6] to-[#1e40af] rounded-full blur-xl opacity-30" />
         </motion.div>
       </motion.div>
