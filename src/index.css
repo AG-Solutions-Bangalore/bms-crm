@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode */
+    --background: 0 0% 99%;
+    --foreground: 220 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 12%;
+
+    --primary: 220 70% 50%; /* vibrant blue */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 65% 38%; /* teal */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 8% 40%;
+
+    --accent: 200 65% 38%; /* teal accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 55%; /* red */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 220 70% 50%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 220 30% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 220 70% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 20%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 220 70% 50%;
+  }
+
+  .dark {
+    /* Dark mode */
+    --background: 220 25% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 20% 18%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 20% 18%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 220 70% 55%; /* brighter blue for contrast */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 60% 45%; /* teal */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 22%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 200 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 22%;
+    --input: 220 20% 22%;
+    --ring: 220 70% 55%;
+
+    /* Sidebar */
+    --sidebar-background: 220 25% 15%;
+    --sidebar-foreground: 0 0% 92%;
+    --sidebar-primary: 220 70% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 25% 22%;
+    --sidebar-accent-foreground: 0 0% 92%;
+    --sidebar-border: 220 20% 22%;
+    --sidebar-ring: 220 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Noto Sans Georgian", sans-serif;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: var(--radius);
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+  background: hsl(var(--sidebar-background));
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+  background: hsl(var(--sidebar-primary));
+}
